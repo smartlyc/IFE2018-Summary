@@ -9,13 +9,13 @@
 ### 哪些东西今天学了之后还有很多疑问没有被解答，把问题记录下来，以待后续解决
 
 ### Code
-代码整洁：
-保证body内内容尽可能少，
+#### 代码简洁：
+保证body内内容尽可能少，将操作相关的代码放在js内，方便阅读。
 原来：
 ```
   <button id="btn" onclick="btn()"></button>
   <script>
-    document.getElementById("btn").onclick = function () {
+    function btn() {
       // 点按钮后弹出一个文字，你可以尝试改变文字内容
       alert("你好啊，欢迎来到百度前端技术学院");
     }
