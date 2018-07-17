@@ -7,3 +7,30 @@
 ### 哪些东西今天了解到了一些，还有哪些点需要后续继续深入阅读
 
 ### 哪些东西今天学了之后还有很多疑问没有被解答，把问题记录下来，以待后续解决
+
+### Code
+代码整洁：
+保证body内内容尽可能少，
+原来：
+```
+  <button id="btn" onclick="btn()"></button>
+  <script>
+    document.getElementById("btn").onclick = function () {
+      // 点按钮后弹出一个文字，你可以尝试改变文字内容
+      alert("你好啊，欢迎来到百度前端技术学院");
+    }
+  </script>
+
+```
+现在：
+```
+  <button id="btn"></button>
+  <script>
+    document.getElementById("btn").onclick = function () {
+      // 点按钮后弹出一个文字，你可以尝试改变文字内容
+      alert("你好啊，欢迎来到百度前端技术学院");
+    }
+  </script>
+```
+
+
